@@ -1,0 +1,247 @@
+p.small-purple {
+    color: purple;
+    font-size: 12px;
+    margin: 6px;
+    font-weight: bolder;
+}
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    font-family: 'Helvetica', sans-serif;
+    color:rgb(71, 71, 71);
+}
+
+nav {
+    border-top: 2px solid rgba(128, 0, 128, 0.777);
+    border-bottom: 1px solid rgb(188, 188, 188);
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    background-color: white;
+}
+
+nav ul li a {
+    color: grey;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgba(128, 0, 128, 0.777);
+}
+
+nav ul li a.active {
+    color: rgba(128, 0, 128, 0.777);
+}
+
+section.main {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+div.left-side {
+    flex: 2.2;
+    display: flex;
+    padding: 0px;
+    justify-content: right;
+}
+
+div.right-side {
+    flex: 4;
+    border-left: solid grey 1px;
+    padding-left: 40px;
+    padding-right: 0;
+}
+
+div.right-side p {
+    width: 400px
+}
+
+figure#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure#profile img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+figure#profile figcaption {
+    color: grey;
+    max-width: 190px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 24px;
+    margin: 6px;
+}
+
+figure#profile figcaption h4{
+    font-weight: normal;
+    font-size: 18px;
+    margin: 6px;
+}
+
+
+.page-title {
+    font-size: 30px;
+    font-weight: normal;
+    color: grey;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+footer {
+    margin-top: auto;
+    border-top: solid 1px grey;
+    text-align: center;
+    color: grey;
+    font-size: 12px;
+    font-family: 'helvetica', sans-serif; 
+}
+
+.skills-table {
+    max-width: 450px;
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.skills-table tr{
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.skills-table tr td progress{
+    width: 100%;
+    height: 25px;
+}
+
+.edu-exp-table {
+    width: 450px;
+}
+
+.edu-exp-table tr td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.eduexp {
+    color:rgb(71, 71, 71);
+    font-size: 14;
+}
+
+.eduexp strong {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.date-place {
+    color: rgb(71, 71, 71);
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    line-height: 1.6;
+}
+
+.credentials {
+    padding-top: 10%;
+    font-size: 15px;
+    color: rgb(159, 159, 159);
+    font-weight: normal;
+}
+
+a#resume {
+    color: purple;
+    text-decoration: none;
+}
+
+.interests {
+    list-style-type: none;
+    color:rgb(71, 71, 71)
+}
+
+.interests li:before{
+    content: "- ";
+    margin-left: -36px;
+}
+
+.interests li {
+    padding-top: 14px;
+}
+
+@media only screen and (max-width: 800px){
+
+        
+    section.main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    div.right-side {
+        border-left: none;
+        border-top: solid grey 1px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    div.left-side {
+        display: flex;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 802px) {
+    section.main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.right-side {
+        border-left: solid grey 1px;
+        padding: 40px;
+        flex: 3;
+    }
+    div.left-side {
+        flex: 2.2;
+        display: flex;
+        padding: 0px;
+        justify-content: right;
+    }
+}
